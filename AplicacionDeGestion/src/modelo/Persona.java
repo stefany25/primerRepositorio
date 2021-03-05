@@ -36,10 +36,16 @@ public class Persona {
 	private void calculo() {
 
 	}
-	
-	public String comprobarDireccion() {
+	/**
+	 * 
+	 * @param nombre
+	 * @param edad
+	 * @param direccion
+	 * @return
+	 */
+	public String comprobarDireccion(String nombre, int edad, String direccion) {
 
-		return direccion;
+		return edad+" "+nombre+" "+direccion;
 
 	}
 
