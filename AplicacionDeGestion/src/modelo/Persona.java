@@ -11,26 +11,42 @@ public class Persona {
 
 	}
 
+	public Persona() {
+	}
+
 	public Persona(String nombre, int edad) {
-		super();
+
 		this.nombre = nombre;
 		this.edad = edad;
 	}
-
+	/**
+	 * Contructor que recibe tren parametros
+	 * @param nombre
+	 * @param edad
+	 * @param direccion
+	 */
 	public Persona(String nombre, int edad, String direccion) {
 
-		super();
 		this.nombre = nombre;
 		this.direccion = direccion;
 		this.edad = edad;
+
 	}
 
 	private void calculo() {
 
 	}
+	
+	public String comprobarDireccion() {
+
+		return direccion;
+
+	}
 
 	@Override
+
 	public String toString() {
 		return "Persona [nombre=" + nombre + ", edad=" + edad + ", direccion=" + direccion + "]";
+
 	}
 }
